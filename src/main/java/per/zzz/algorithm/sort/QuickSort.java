@@ -3,6 +3,7 @@ package per.zzz.algorithm.sort;
 import java.util.Arrays;
 
 /**
+ * 快速排序
  * @author 阿忠 2669918628@qq.com
  * @since 2022/2/14 16:39
  */
