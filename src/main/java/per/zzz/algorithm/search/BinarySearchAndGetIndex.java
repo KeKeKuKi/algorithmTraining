@@ -16,7 +16,7 @@ public class BinarySearchAndGetIndex {
         return search(nums, target, 0, nums.length - 1);
     }
 
-    public int search(int[] nums, int target,int left, int right){
+    public static int search(int[] nums, int target,int left, int right){
         int index = (left + right) / 2;
         int number = nums[index] ;
         if(number == target){
