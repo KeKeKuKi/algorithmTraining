@@ -7,7 +7,7 @@ package per.zzz.algorithm.search;
  * 977. 有序数组的平方
  * 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。
  */
-public class NewSortNums {
+public class MergeTwoArraysSquareToOneArray {
     public int[] sortedSquares(int[] nums) {
         int n = nums.length;
         int negative = search(nums, 0) - 1;

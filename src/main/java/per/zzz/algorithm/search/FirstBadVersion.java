@@ -14,7 +14,7 @@ package per.zzz.algorithm.search;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/first-bad-version
  */
-public class BinarySearchFirstBadVersion {
+public class FirstBadVersion {
     public int firstBadVersion(int n) {
         int left = 1, right = n;
         int mid = 0;

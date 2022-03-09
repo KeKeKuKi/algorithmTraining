@@ -11,7 +11,7 @@ package per.zzz.algorithm.search;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/search-insert-position
  */
-public class BinarySearchAndGetIndex {
+public class BinarySearchAndGetItsIndex {
     public int searchInsert(int[] nums, int target) {
         return search(nums, target, 0, nums.length - 1);
     }

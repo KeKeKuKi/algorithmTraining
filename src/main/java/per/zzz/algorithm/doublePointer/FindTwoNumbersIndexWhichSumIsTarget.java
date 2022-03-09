@@ -1,7 +1,5 @@
 package per.zzz.algorithm.doublePointer;
 
-import per.zzz.algorithm.search.BinarySearchAndGetIndex;
-
 /**
  * @author 阿忠 2669918628@qq.com
  * @since 2022/3/9 13:52
@@ -13,7 +11,7 @@ import per.zzz.algorithm.search.BinarySearchAndGetIndex;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted
  */
-public class TwoNumberAdd {
+public class FindTwoNumbersIndexWhichSumIsTarget {
     public int[] twoSum(int[] numbers, int target) {
         int i = 0, j = numbers.length - 1;
         int [] ans = new int [2];
