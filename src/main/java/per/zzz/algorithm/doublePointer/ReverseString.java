@@ -13,7 +13,7 @@ public class ReverseString {
         for(int i = 0; i< words.length; i++){
             res.append(reverseString(words[i].toCharArray())).append(" ");
         }
-        return res.toString().substring(0, res.toString().length() - 2);
+        return res.toString().trim();
     }
 
     public String reverseString(char[] s) {
