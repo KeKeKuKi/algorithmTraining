@@ -87,8 +87,6 @@ public class IfStrIsANumber {
      * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5dkal2/
      * 来源：力扣（LeetCode）
      */
-
-
     public boolean isNumber(String s) {
         Map[] states = {
                 new HashMap() {{ put(' ', 0); put('s', 1); put('d', 2); put('.', 4); }}, // 0.
