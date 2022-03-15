@@ -1,4 +1,4 @@
-package per.zzz.algorithm.breadthFirst;
+package per.zzz.algorithm.depthFirst;
 
 /**
  * @author 阿忠 2669918628@qq.com
