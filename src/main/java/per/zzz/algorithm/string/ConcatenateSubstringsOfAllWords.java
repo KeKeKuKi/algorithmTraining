@@ -14,13 +14,27 @@ import java.util.*;
 public class ConcatenateSubstringsOfAllWords {
     public static List<Integer> findSubstring(String s, String[] words) {
         List<Integer> ans = new ArrayList<>();
+        int step = words[0].length() * words.length;
+        for (int i = 0; i < s.length() - step + 1; i++) {
+            int j = i + step;
+            String substring = s.substring(i, j);
 
+            for (int k = 0; k < words.length; k++) {
+                if (!substring.contains(words[k])){
+                    break;
+                }
+                substring = substring.replaceFirst(words[k], "%%%%%");
+                if (k == words.length - 1){
+                    ans.add(i);
+                }
+            }
+        }
         return ans;
     }
 
     public static void main(String[] args) {
-        String s = "barfoothefoobarman";
-        String[] words = {"foo", "bar"};
+        String s = "wordgoodgoodgoodbestword";
+        String[] words = {"word","good","best","word"};
 
         findSubstring(s, words);
     }

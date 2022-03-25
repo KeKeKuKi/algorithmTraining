@@ -1,5 +1,10 @@
 package per.zzz.algorithm.doublePointer;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
 /**
  * @author 阿忠 2669918628@qq.com
  * @since 2022/3/9 13:52
@@ -30,5 +35,24 @@ public class FindTwoNumbersIndexWhichSumIsTarget {
             }
         }
         return new int[]{i + 1, j + 1};
+    }
+
+    // 数组无序时
+    public static int[] twoSum2(int[] numbers, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < numbers.length; i++) {
+            if(map.get(target - numbers[i]) != null){
+                return new int[]{map.get(target - numbers[i]) + 1, i + 1};
+            }else {
+                map.put(numbers[i], i);
+            }
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {20,70,110,150};
+        int tar = 90;
+        System.out.println(Arrays.toString(twoSum2(numbers, tar)));
     }
 }
