@@ -23,7 +23,7 @@ public class ConcatenateSubstringsOfAllWords {
                 if (!substring.contains(words[k])){
                     break;
                 }
-                substring = substring.replaceFirst(words[k], "%%%%%");
+                substring = substring.replaceFirst(words[k], "");
                 if (k == words.length - 1){
                     ans.add(i);
                 }
