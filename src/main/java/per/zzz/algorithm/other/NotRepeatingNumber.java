@@ -1,5 +1,8 @@
 package per.zzz.algorithm.other;
 
+import java.math.BigInteger;
+import java.util.*;
+
 /**
  * @author 阿忠 2669918628@qq.com
  * @since 2022/4/11 18:41
@@ -16,6 +19,7 @@ public class NotRepeatingNumber {
             count *= (11 - i);
             ans += count;
         }
+
         return 1 + ans;
     }
 }
